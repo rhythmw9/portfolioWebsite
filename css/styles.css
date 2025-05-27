@@ -1,0 +1,30 @@
+/* Site wide background color */
+.home-wrapper {
+  background-color: #8e8e8e;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #8e8e8e, #7a7a7a);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Active nav tab style */
+.nav-link.active {
+  color: #0b5ed7;
+  font-weight: bold;
+  border-bottom: 2px solid #0b5ed7;
+}
+
+/* Name font */
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+}
+
+/* Hovering for nav tabs */
+.nav-link:not(.active):hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
