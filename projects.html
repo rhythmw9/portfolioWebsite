@@ -53,12 +53,17 @@
           </button>
 
           <!-- Right side -->
-          <div class="d-none d-lg-flex gap-4 fw-semibold">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link active" href="projects.html">Projects</a>
-            <a class="nav-link" href="blog.html">Blog</a>
-            <a class="nav-link" href="contact.html">Contact</a>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <div class="d-none d-lg-flex gap-4 fw-semibold">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link active" href="projects.html">Projects</a>
+              <a class="nav-link" href="blog.html">Blog</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -67,106 +72,119 @@
       <main>
         <div class="container py-5">
           <h1 class="mb-5 text-center">Projects</h1>
-          
-            <!-- Portfolio website -->
-            
-              <div class="card mb-4 shadow-sm rounded-4 bg-white border-0">
-                <div class="card-body p-4">
-                  <h3 class="card-title">Portfolio Website</h3>
-                  <p class="card-text lead">
-                    A personal portfolio built with HTML, CSS, Bootstrap, and
-                    JavaScript to showcase my projects and experience.
-                  </p>
-                  <p class="text-muted small">
-                    HTML, CSS, Bootstrap, JavaScript
-                  </p>
-                  <a href="index.html" class="btn btn-outline-primary btn-sm me-2"
-                    >Live Site</a
-                  >
-                  <a
-                    href="https://github.com/rhythmw9/portfolioWebsite"
-                    class="btn btn-outline-secondary btn-sm"
-                    >GitHub</a
-                  >
-                </div>
-              </div>
 
-              
-            
-            <!-- C Address Book -->
-            
-              <div class="card mb-4 shadow-sm rounded-4 bg-white border-0">
-                <div class="card-body p-4">
-                  <h3 class="card-title">C Address Book</h3>
-                  <p class="card-text lead">
-                    A command-line address book implemented in C using linked
-                    lists and file I/O to add, search, and save contacts.
-                  </p>
-                  <p class="text-muted small">C, Linked Lists, File I/O</p>
-                  <a
-                    href="https://github.com/rhythmw9/Address-Book-Project"
-                    class="btn btn-outline-secondary btn-sm"
-                    >View Code</a
-                  >
-                </div>
-              </div>
-            
+          <!-- Portfolio website -->
 
-            <!-- Classical ML Project -->
-            
-              <div class="card mb-4 shadow-sm rounded-4 bg-white border-0">
-                <div class="card-body p-4">
-                  <h3 class="card-title">Machine Learning: Clustering</h3>
-                  <p class="card-text lead">
-                    Used K-Means and Gaussian Mixture Models to cluster
-                    real-world data and analyze algorithm performance.
-                  </p>
-                  <p class="text-muted small">
-                    Python, Scikit-learn, K-Means, GMM
-                  </p>
-                  <a
-                    href="https://github.com/rhythmw9/SVM-Cancer-Detection"
-                    class="btn btn-outline-secondary btn-sm"
-                    >View Notebook</a
-                  >
-                </div>
-              </div>
-            
+          <div class="card mb-4 shadow-sm rounded-4 bg-white border-0">
+            <div class="card-body p-4">
+              <h3 class="card-title">Portfolio Website (this website!)</h3>
+              <p class="card-text lead">
+                A personal portfolio built with HTML, CSS, Bootstrap, and
+                JavaScript to showcase my projects and experience.
+              </p>
+              <p class="text-muted small">HTML, CSS, Bootstrap, JavaScript</p>
+              <a
+                href="https://github.com/rhythmw9/portfolioWebsite"
+                target="_blank"
+                class="btn btn-outline-secondary btn-sm"
+                >View Code</a
+              >
+            </div>
+          </div>
 
-            <!-- Garage Door Project -->
-            
-              <div class="card mb-4 shadow-sm rounded-4 bg-white border-0">
-                <div class="card-body p-4">
-                  <h3 class="card-title">Embedded: Garage Door System</h3>
-                  <p class="card-text lead">
-                    Coming soon: A garage door automation system using an STM32
-                    board, stepper motor, sensors, and Bluetooth module.
-                  </p>
-                  <p class="text-muted small">
-                    STM32, Embedded C, Sensors, UART/SPI
-                  </p>
-                  <span class="badge bg-secondary">Coming Soon</span>
+          <!-- C Address Book -->
 
-                </div>
-              </div>
-            
+          <div class="card mb-4 shadow-sm rounded-4 bg-white border-0">
+            <div class="card-body p-4">
+              <h3 class="card-title">C Address Book</h3>
+              <p class="card-text lead">
+                A command-line address book built in C using singly linked
+                lists. Supports adding, deleting, editing, and saving contacts.
+                Organized into modular files with dynamic memory and CSV file
+                I/O.
+              </p>
+              <p class="text-muted small">
+                C, Structs, Linked Lists, File I/O, Modular Design, Dynamic
+                Memory, Parsing
+              </p>
+              <a
+                href="https://github.com/rhythmw9/Address-Book-Project"
+                target="_blank"
+                class="btn btn-outline-secondary btn-sm"
+                >View Code</a
+              >
+            </div>
+          </div>
 
-            <!-- Deep Learning Project -->
-            
-              <div class="card mb-4 shadow-sm rounded-4 bg-white border-0">
-                <div class="card-body p-4">
-                  <h5 class="card-title">Deep Learning Final Project</h5>
-                  <p class="card-text lead">
-                    Coming soon: A neural network-based project built with
-                    TensorFlow/PyTorch for classification and model evaluation.
-                  </p>
-                  <p class="text-muted small">
-                    Python, TensorFlow/PyTorch, Deep Learning
-                  </p>
-                </div>
-              </div>
-            
-          
+          <!-- Classical ML Project -->
+
+          <div class="card mb-4 shadow-sm rounded-4 bg-white border-0">
+            <div class="card-body p-4">
+              <h3 class="card-title">SVM Classifier</h3>
+              <p class="card-text lead">
+                A simple machine learning project using a support vector machine
+                (SVM) to classify breast cancer data from a well-known public
+                dataset. Focused on learning model training, evaluation, and
+                basic data preprocessing.
+              </p>
+              <p class="text-muted small">
+                Python, CVXPy, SVM, Data Preprocessing, Classification
+              </p>
+              <a
+                href="https://github.com/rhythmw9/SVM-Cancer-Detection"
+                target="_blank"
+                class="btn btn-outline-secondary btn-sm"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+          <!-- Garage Door Project -->
+
+          <div class="card mb-4 shadow-sm rounded-4 bg-white border-0">
+            <div class="card-body p-4">
+              <h3 class="card-title">
+                Embedded Systems: Automated Garage Door
+              </h3>
+              <p class="card-text lead">
+                <span class="badge text-bg-secondary fw-semibold"
+                  >In Progress:</span
+                >
+                An STM32-based system that automates a garage door using sensor
+                feedback and non-blocking control. The door responds to
+                temperature changes, maintains position with an accelerometer,
+                and can be controlled via Bluetooth or terminal commands. Built
+                using non-blocking UART, DMA, and timer-driven motor control.
+              </p>
+              <p class="text-muted small">
+                STM32, Embedded C, I2C, SPI, UART (non-blocking), DMA, SysTick,
+                Stepper Motor Control, Bluetooth (HC-05), Sensor Integration,
+                Real-Time Logic
+              </p>
+            </div>
+          </div>
+
+          <!-- Deep Learning Project -->
+
+          <div class="card mb-4 shadow-sm rounded-4 bg-white border-0">
+            <div class="card-body p-4">
+              <h5 class="card-title">Deep Learning: STL-10 Image Classifier</h5>
+              <p class="card-text lead">
+                <span class="badge text-bg-secondary fw-semibold"
+                  >In Progress:</span
+                >Built a convolutional neural network from scratch in PyTorch to
+                classify images from the STL-10 dataset. Modeled after LeNet-5,
+                the network was trained and evaluated on 10 object categories
+                with performance analysis using confusion matrices and
+                class-wise accuracy.
+              </p>
+              <p class="text-muted small">
+                Python, PyTorch, CNNs, Image Classification, Data Preprocessing,
+                CrossEntropy Loss, ADAM Optimizer, Evaluation Metrics, Confusion
+                Matrix
+              </p>
+            </div>
+          </div>
         </div>
       </main>
 

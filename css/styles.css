@@ -13,12 +13,9 @@ main {
   flex: 1;
 }
 
-
-
-
 /* Active nav tab style (has to override bootstraps default color) */
 .nav-link.active {
-  color: #0b5ed7 !important; 
+  color: #0b5ed7 !important;
   font-weight: bold;
   border-bottom: 2px solid #0b5ed7;
 }
@@ -40,16 +37,19 @@ main {
   transition: text-decoration-color 0.2s ease;
 }
 
-
 .card:hover {
   transform: translateY(-6px); /* move up slightly */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* add a soft lift shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .navbar {
-  background-color: rgba(142, 142, 142, 0.8); /* match #8e8e8e with subtle transparency */
+  background-color: rgba(
+    142,
+    142,
+    142,
+    0.8
+  ); /* match #8e8e8e with subtle transparency */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); /* for Safari */
   z-index: 1030;
@@ -64,14 +64,3 @@ main {
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
