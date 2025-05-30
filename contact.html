@@ -64,6 +64,80 @@
       </nav>
 
       <!-- Main section -->
+      <main class="container py-5">
+        <div class="text-center mb-5">
+          <h1 class="display-5 fw-bold">Contact Me</h1>
+          <p class="lead text-muted">
+            Feel free to reach out for opportunities, collaboration, or just to
+            say hi.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <div class="card shadow rounded-4 p-4 bg-light">
+              <form id="contact-form" action="https://formspree.io/f/mldnrdzj" method="post">
+                <div class="mb-3">
+                  <label for="name" class="form-label fw-semibold">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control rounded-3"
+                    id="name"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-semibold"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control rounded-3"
+                    id="email"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label fw-semibold"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    name="subject"
+                    class="form-control rounded-3"
+                    id="subject"
+                    placeholder="Reason for reaching out"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="form-label fw-semibold"
+                    >Message</label
+                  >
+                  <textarea
+                    name="message"
+                    class="form-control rounded-3"
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-dark rounded-3">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            
+          </div>
+        </div>
+      </main>
 
       <!-- Footer -->
       <footer class="bg-transparent text-center py-4 mt-auto">
@@ -92,10 +166,27 @@
       </footer>
     </div>
 
+    <!-- Bootstrap popup -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="thankYouLabel">Message Sent</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Thank you for your message! I’ll get back to you soon.
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script src="ext_scripts.js"></script>
   </body>
 </html>

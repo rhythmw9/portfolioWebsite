@@ -36,6 +36,8 @@ main {
 .nav-link:not(.active):hover {
   text-decoration: underline;
   text-decoration-color: black;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s ease;
 }
 
 
@@ -58,6 +60,11 @@ main {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 
 
