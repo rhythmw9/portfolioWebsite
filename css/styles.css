@@ -64,3 +64,10 @@ main {
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+/* Fix unexpected I-beam cursor on static text */
+p, span, small, h1, h2, h3, h4, h5, h6, .lead, .display-6, .fw-normal {
+  cursor: default !important;
+}
+
