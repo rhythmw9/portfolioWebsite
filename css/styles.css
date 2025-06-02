@@ -9,6 +9,7 @@
   background-size: cover;
 }
 
+/* Main section flex growth */
 main {
   flex: 1;
 }
@@ -37,30 +38,29 @@ main {
   transition: text-decoration-color 0.2s ease;
 }
 
+/* Card lift effect on hover */
 .card:hover {
-  transform: translateY(-6px); /* move up slightly */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* add a soft lift shadow */
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Navbar background and styling */
 .navbar {
-  background-color: rgba(
-    142,
-    142,
-    142,
-    0.8
-  ); /* match #8e8e8e with subtle transparency */
+  background-color: rgba(142, 142, 142, 0.8);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /* for Safari */
+  -webkit-backdrop-filter: blur(8px);
   z-index: 1030;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* optional: faint separator line */
-  box-shadow: none; /* or use a soft shadow if you want slight depth */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: none;
 }
 
+/* Remove default focus outline from navbar toggler */
 .navbar-toggler:focus {
   box-shadow: none;
 }
 
+/* Card transition effect */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

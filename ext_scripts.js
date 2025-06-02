@@ -1,12 +1,15 @@
-const form = document.getElementById("contact-form");
+const form = document.getElementById("contact-form"); // assign website form to form variable
 
 form.addEventListener("submit", async function (e) {
-  e.preventDefault();
+  // listener to run the async function when form is submitted
+  e.preventDefault(); // prevent default browser behavior
 
-  const formData = new FormData(form);
+  const formData = new FormData(form); // collect form data
 
   try {
+    // try catch to handle errors
     const response = await fetch(form.action, {
+      // send form data to server
       method: "POST",
       body: formData,
       headers: {
@@ -15,16 +18,17 @@ form.addEventListener("submit", async function (e) {
     });
 
     if (response.ok) {
-      form.reset();
-      const modalElement = document.getElementById("thankYouModal");
+      form.reset(); // reset form
+      const modalElement = document.getElementById("thankYouModal"); // find defined popup
       if (modalElement) {
         const thankYouModal = new bootstrap.Modal(modalElement, {
+          // user must click the "x" button to leave the popup
           backdrop: "static",
           keyboard: false,
         });
-        thankYouModal.show();
+        thankYouModal.show(); // show pop up
       } else {
-        alert("Thank you for your message!");
+        alert("Thank you for your message!"); // alert in case pop up fails
         window.location.reload();
       }
     } else {
