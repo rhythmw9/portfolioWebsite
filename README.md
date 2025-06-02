@@ -47,4 +47,14 @@ Want to reach out? You can use the contact form or email me directly:
 
 ---
 
+## Future Improvements
+
+- Add dark mode toggle for better accessibility
+- Write and publish blog articles to the blog page
+- Integrate a contact backend (Node.js) for form handling instead of using Formspree
+
+---
+
 Thanks for checking it out.
+
+- Rhythm Winicour-Freeman
