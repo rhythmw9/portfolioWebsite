@@ -1,5 +1,7 @@
 # Portfolio Website
 
+**Live Site:** [https://rhythmw9.github.io/portfolioWebsite/](https://rhythmw9.github.io/portfolioWebsite/)
+
 This is my personal portfolio site. It's built to showcase who I am, what I’ve worked on, and how to get in touch. It’s responsive, clean, and easy to navigate. Every page is kept simple and purposeful.
 
 ---
