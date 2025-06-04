@@ -58,5 +58,3 @@ Want to reach out? You can use the contact form or email me directly:
 ---
 
 Thanks for checking it out.
-
-- Rhythm Winicour-Freeman
